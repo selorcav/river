@@ -201,6 +201,10 @@ main h1 {
   }
 }
 
+main a {
+  z-index: 2;
+}
+
 main button {
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
@@ -229,7 +233,7 @@ main button:hover {
   background-image: url("../img/pattern.png");
   width: 100%;
   min-height: 100vh;
-  z-index: -1;
+  z-index: 0;
 }
 
 #services .card {
