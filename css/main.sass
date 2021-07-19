@@ -1,0 +1,139 @@
+@import 'mixin', 'variables', 'helper'
+@import 'nav'
+
+a
+  text-decoration: none !important
+h1,h2,h3,h4,h5,h6
+  font-family: $font-poppins
+  font-weight: 600
+p
+  font-family: $font-raleway
+
+main
+  background-image: url("../img/bg.jpg")
+  width: 100%
+  min-height: 100vh
+  background-size: cover
+  background-position: center 
+  background-attachment: fixed
+  z-index: 0
+  .container
+    height: 100vh
+  h1
+    font-size: 2.7em
+    z-index: 2
+    +for-tablet-portrait-only
+      font-size: 2.5em
+    +for-phone-only
+      font-size: 2em
+  button
+    color: white
+    background-color: rgba(255,255,255,0.2) 
+    border: solid 1px white
+    border-radius: 50px
+    font-size: 1.2em
+    z-index: 2
+    font-weight: bold
+    transition: .3s
+    +for-ipad
+      font-size: 1em
+    &:hover
+      background-color: white
+      color: $primary-blue
+.overlay-bg
+  position: absolute
+  background-image: url("../img/pattern.png")
+  width: 100%
+  min-height: 100vh
+  z-index: -1
+
+#services
+  .card
+    margin-top: 60px
+    transition: .3s
+    height: 90%
+    &::before
+      content: ""
+      position: absolute
+      background-color: $primary-blue
+      top: -1px
+      left: -1px
+      width: calc(100% + 2px)
+      height: 8px
+      border-radius: .25rem .25rem 0 0
+    &:hover
+      transform: scale(1.01)
+      box-shadow: 0px 0px 5px #5c5c5c
+    h4
+      font-size: 1.3em
+      margin-top: 60px
+    p
+      font-size: .9em
+    .card-icon
+      top: -48px
+      width: 100%
+      img
+        width: 100px
+
+#about-us
+  .border-r
+    border-right: solid 1px lightgrey
+    height: 90%
+    +for-ipad
+      height: auto
+      border: none
+  .border-l
+    border-left: solid 1px lightgrey
+    height: 90%
+    +for-ipad
+      height: auto
+      border: none
+  h4
+    position: relative
+    &::after
+      bottom: 0
+      content: ""
+      display: block
+      height: 3px
+      left: 0
+      right: 0
+      margin: 40px auto
+      position: absolute
+      width: 40px
+      background: $primary-blue
+    &::before
+      bottom: 0
+      content: ""
+      display: block
+      height: 3px
+      left: 0
+      right: 0
+      margin: -15px auto
+      position: absolute
+      width: 40px
+      background: $primary-blue
+.profile
+  background-image: url("../img/bg-profile.png")
+  background-size: cover
+  background-color: $secondary-blue
+  color: white
+  border: none
+  box-shadow: 0px 0px 2px #000000
+  transition: .3s
+  height: 100%
+  &:hover
+    background-color: white
+    color: $secondary-blue
+    transform: scale(1.05)
+  p
+    font-size: .9em
+  .profile-photo
+    overflow: hidden
+    border-radius: 50%
+    border: solid 10px $primary-blue
+
+.modal-photo
+  border-radius: 50%
+  overflow: hidden
+  width: 50%
+  
