@@ -138,4 +138,67 @@ main
   border-radius: 50%
   overflow: hidden
   width: 50%
+
+.project  
+  overflow: hidden
+  +for-ipad
+    width: auto
+    max-height: 200px
+  .project-bg
+    transition: .3s
+    background-color: rgba(0,0,0,0.6)
+    height: 100%
+    width: 100%
+    bottom: -100%
+  &:hover
+    .project-bg
+      bottom: 0
+      z-index: 3
+    img
+      transform: scale(1.2)
+  img
+    transition: .3s
+
+.bg-contact
+  background-image: url("../img/bg-contact.jpg")
+  background-size: cover
+  form
+    color: #797979
+    input
+      border: none
+      border-bottom: 1px solid lightgray
+      border-radius: 0
+      background-color: transparent
+      &:focus
+        border-bottom: 2px solid $primary-blue
+        background-color: transparent
+    textarea
+      &:focus
+        border: 2px solid $primary-blue
+        background-color: transparent
+  iframe
+    min-height: 300px
+    border: solid 1px $primary-blue !important
+  button
+    // margin-left: auto
+    // width: auto
+    border-radius: 50px
   
+footer
+  h6
+    font-size: 1.1em
+  ul
+    list-style: none
+    font-weight: 100
+    a
+      color: white
+      padding-left: 5px
+      &:hover
+        color: $primary-blue-3
+  hr
+    color: white
+    height: 1px !important
+    opacity: .5
+  .text-cr
+    font-size: .9em
+    font-weight: 100
