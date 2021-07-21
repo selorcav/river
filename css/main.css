@@ -176,6 +176,66 @@ nav .login-btn {
           box-shadow: 0px 0px 5px #000000;
 }
 
+.bar {
+  display: block;
+  width: 30px;
+  height: 20px;
+  right: 22px;
+  position: absolute;
+  top: 38px;
+}
+
+.bar:after, .bar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 0;
+  border-bottom: 4px solid white;
+  width: 100%;
+  left: 0;
+  right: 0;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.bar:after {
+  top: 100%;
+}
+
+.bar i {
+  display: block;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 4px;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+
+.bar.nav-active:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  top: 50%;
+}
+
+.bar.nav-active:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  top: 50%;
+}
+
+.bar.nav-active i {
+  opacity: 0;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -390,6 +450,7 @@ main button:hover {
 
 .project {
   overflow: hidden;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -421,6 +482,20 @@ main button:hover {
 .project img {
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  background-color: transparent;
+}
+
+.project-header {
+  max-height: 170px;
 }
 
 .bg-contact {
