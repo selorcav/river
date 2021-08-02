@@ -561,4 +561,70 @@ footer .text-cr {
   font-size: .9em;
   font-weight: 100;
 }
+
+.project-main {
+  min-height: 35vh !important;
+  background-attachment: inherit;
+}
+
+.project-main .overlay-bg {
+  min-height: inherit;
+}
+
+.project-main .title-project {
+  min-height: 35vh !important;
+}
+
+.project-main .title-project h2 {
+  z-index: 1;
+  margin-bottom: 2.5em;
+}
+
+.project-container {
+  margin-top: -2em;
+}
+
+.project-gallery {
+  max-height: 500px;
+}
+
+.related-card {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .related-card {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .related-card img {
+    width: 100%;
+  }
+}
+
+.blog-card {
+  min-height: 200px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.blog-card:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0px 0px 5px #5c5c5c;
+          box-shadow: 0px 0px 5px #5c5c5c;
+}
+
+.blog-card_img {
+  min-height: 150px;
+}
+
+.blog-card .row {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 /*# sourceMappingURL=main.css.map */

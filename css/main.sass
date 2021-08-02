@@ -214,3 +214,40 @@ footer
   .text-cr
     font-size: .9em
     font-weight: 100
+
+  
+  // PROJECTS
+.project-main
+  min-height: 35vh !important
+  background-attachment: inherit
+  .overlay-bg
+    min-height: inherit
+  .title-project
+    min-height: 35vh !important 
+    h2
+      z-index: 1
+      margin-bottom: 2.5em
+.project-container
+  margin-top: -2em
+.project-gallery
+  max-height: 500px
+
+.related-card
+  max-height: 300px
+  overflow: hidden
+  +for-ipad
+    max-height: 200px
+  img
+    +for-ipad
+      width: 100%
+
+.blog-card
+  min-height: 200px
+  transition: .3s
+  &:hover
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px #5c5c5c
+  &_img
+    min-height: 150px
+  .row
+    flex-grow: 1
