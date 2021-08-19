@@ -30,13 +30,13 @@
     <!--Start Navigation-->
     <nav class="navbar fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="./img/logo-nav.png" alt="" height="55" class="d-inline-block align-text-top">
         </a>
         <div id="menu" class="menu d-flex flex-column flex-md-row justify-content-center align-items-center">
           <img class="d-block d-md-none position-absolute" src="./img/logo-nav.png" alt="" height="60">
           <ul class="d-flex mb-0 flex-column flex-md-row align-items-center p-0">
-            <a class="text-white" href="#">
+            <a class="text-white" href="/index.html">
               <li class="px-md-2">Home</li>
             </a>
             <a class="text-white" href="#services">
@@ -168,7 +168,7 @@
       <div class="col-lg-10 offset-lg-1 row mt-5 justify-content-center">
 
         <div class="project col-md-4 p-0 position-relative">
-          <a data-bs-toggle="modal" data-bs-target="#project-1">
+          <a href="./proyecto.html">
             <div class="project-bg position-absolute p-4 d-flex justify-content-center align-items-center">
               <h4 class="text-white text-center">Sistema de monitoreo de la socavación local en pilas de puentes</h4>
             </div>
@@ -188,36 +188,6 @@
             <h4 class="text-white text-center">Diseño Red de abastecimiento de agua para riego-sector Pupio</h4>
           </div>
           <img class="img-fluid " src="./img/proyecto3.jpg" alt="">
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="project-1" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header project-header p-0 overflow-hidden">
-                <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close"><i
-                    class="fas fa-times"></i></button>
-                <img class="img-fluid" src="./img/proyecto1.jpg" alt="">
-              </div>
-              <div class="modal-body">
-                <h4 class="text-primary-blue text-center">Sistema de monitoreo de la socavación local en pilas de
-                  puentes</h4>
-                <p class="pt-2">Proyecto co-financiado por CORFO, a través del capital Semilla Inicia.</p>
-                <p>
-                  Es ampliamente sabido que la socavación es la principal causa del colapso de puentes en el mundo
-                  entero, pero es un fenómeno difícil de medir y muchas veces se encuentra oculto a la vista de las
-                  personas. RIVERINE, consciente de esta problemático, propuso implementar un sistema de monitoreo
-                  directo, remoto y continuo de la socavación en torno a las cepas de los puentes mediante el uso de
-                  unos sensores ultrasónicos existentes en el mercado internacional y que fueron adaptados para medir la
-                  socavación en condiciones hidrodinámicamente complejas.</p>
-                <p>
-                  El financiamiento del proyecto permitió validar técnica y comercialmente el prototipo propuesto por
-                  RIVERINE. La empresa se encuentra actualmente mejorando el diseño mediante el uso de tecnología más
-                  avanzada que permita una mayor autonomía del sistema de monitoreo.</p>
-              </div>
-            </div>
-          </div>
         </div>
 
       </div>
@@ -553,9 +523,11 @@
     $(window).on('scroll', function () {
       if ($(window).scrollTop()) {
         $('nav').addClass('bg-nav');
+        $('.login-btn').addClass('login-scroll-btn')
       }
       else {
         $('nav').removeClass('bg-nav');
+        $('.login-btn').removeClass('login-scroll-btn')
       }
     })
   </script>

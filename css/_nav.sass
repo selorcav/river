@@ -45,13 +45,26 @@ nav
         text-align: center
 
   .login-btn
-    background-color: transparent
+    color: $primary-blue
+    background-color: white
     font-size: .75em
     font-family: $font-raleway
     padding: 5px 15px
     // border: none
     +for-ipad
       margin-top: 10px
+    &:hover
+      background-color: $secondary-blue
+      color: white
+
+
+  .login-btn.login-scroll-btn
+    background-color: $secondary-blue-2
+    border: solid 1px $secondary-blue-2
+    color: white
+    &:hover
+      background-color: transparent
+      border: solid 1px white
 
 .bg-nav
   background-color: $secondary-blue

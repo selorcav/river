@@ -158,7 +158,8 @@ nav ul li {
 }
 
 nav .login-btn {
-  background-color: transparent;
+  color: #2970e2;
+  background-color: white;
   font-size: .75em;
   font-family: "Raleway", sans-serif;
   padding: 5px 15px;
@@ -168,6 +169,22 @@ nav .login-btn {
   nav .login-btn {
     margin-top: 10px;
   }
+}
+
+nav .login-btn:hover {
+  background-color: #052851;
+  color: white;
+}
+
+nav .login-btn.login-scroll-btn {
+  background-color: #2a92e2;
+  border: solid 1px #2a92e2;
+  color: white;
+}
+
+nav .login-btn.login-scroll-btn:hover {
+  background-color: transparent;
+  border: solid 1px white;
 }
 
 .bg-nav {
